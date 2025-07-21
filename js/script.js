@@ -5,11 +5,12 @@
     backSpeed: 30,
     backDelay: 1000,
   });
- const currentPage = window.location.pathname.split("/").pop();
-  const navLinks = document.querySelectorAll(".nav-link");
+  
+const currentPage = window.location.pathname.split("/").pop().replace(".html", "") || "index";
 
-  navLinks.forEach(link => {
-    if (link.getAttribute("href") === currentPage) {
-      link.classList.add("active");
-    }
-  });
+document.querySelectorAll(".nav-link").forEach(link => {
+  const linkHref = link.getAttribute("href").replace(".html", "").replace("/", "");
+  if (linkHref === currentPage) {
+    link.classList.add("active");
+  }
+});

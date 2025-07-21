@@ -85,10 +85,11 @@ buttons.forEach(button => {
 
 
 // Highlight current nav link
-const currentPage = window.location.pathname.split("/").pop();
-const navLinks = document.querySelectorAll(".nav-link");
-navLinks.forEach(link => {
-  if (link.getAttribute("href") === currentPage) {
+const currentPage = window.location.pathname.split("/").pop().replace(".html", "") || "index";
+
+document.querySelectorAll(".nav-link").forEach(link => {
+  const linkHref = link.getAttribute("href").replace(".html", "").replace("/", "");
+  if (linkHref === currentPage) {
     link.classList.add("active");
   }
 });

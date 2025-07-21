@@ -34,10 +34,11 @@
           color: white;
         }
 
-        nav ul li a:hover {
-         color: #7cf03d;
-          transform: scale(1.1) !important;
-        }
+     .nav-link.active {
+  color: #7cf03d;
+  font-weight: bold;
+}
+
 
         .nav a.active {
   color: #7cf03d; 
