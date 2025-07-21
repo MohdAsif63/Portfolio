@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asif-Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="left">Asif 's <span class="neon">Portfolio</span></div>
+        <div class="rigth">
+          <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="Skill.html" class="nav-link">Skills</a></li>
+            <li><a href="project.html" class="nav-link">Projects</a></li>
+            <li><a href="contact.html" class="nav-link">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact-section">
+        <div class="contact-container">
+          <div class="contact-info">
+            <h2 class="contact-heading">Let's Connect!</h2>
+            <p class="contact-subtext">
+              Let’s connect to build great things together 🤝! Whether it’s collaborations, ideas, or questions 📨 — feel free to reach out! 🚀
+            </p>
+            <div class="info-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h4>Phone</h4>
+                <p>+91 63944 48037</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>mohdasif639444@gmail.com</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Address</h4>
+                <p>Kanpur, India</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <form id="contact-form" method="POST" class="contact-form">
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input type="email" name="email" placeholder="Your Email" required />
+              <textarea name="message" rows="6" placeholder="Your Message" class="textarea" required></textarea>
+              <button type="submit" class="btnCont">Send Message</button>
+              <p id="form-status" class="status-message"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/contact.js"></script>
+  </body>
+</html>

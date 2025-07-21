@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asif-Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+     <link rel="stylesheet" href="css/skills.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="left">Asif 's <span class="neon">Portfolio</span></div>
+        <div class="rigth">
+          <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="Skill.html" class="nav-link">Skills</a></li>
+            <li><a href="project.html" class="nav-link">Projects</a></li>
+            <li><a href="contact.html" class="nav-link">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+     <section class="skills-section">
+  <h2 class="section-title">Tech<span class="neon"> Stack</span></h2>
+  <p class="skills-subtitle">🚀 My Technical skills and tools 🛠️ that I use to build, innovate, and bring creative ideas 💡 to digital life 🌐.</p>
+
+
+  <div class="skill-filters">
+    <button class="filter-btn active" data-category="all">All Skills</button>
+    <button class="filter-btn" data-category="frontend">Frontend</button>
+    <button class="filter-btn" data-category="backend">Backend</button>
+    <button class="filter-btn" data-category="tools">Tools</button>
+  </div>
+
+ 
+  <div class="skills-grid" id="skillsGrid">
+
+    
+    <div class="skill-card" data-category="frontend">
+      <i class="fab fa-html5"></i><span>HTML5</span>
+    </div>
+    <div class="skill-card" data-category="frontend">
+      <i class="fab fa-css3-alt"></i><span>CSS3</span>
+    </div>
+    <div class="skill-card" data-category="frontend">
+      <i class="fab fa-js"></i><span>JavaScript</span>
+    </div>
+    <div class="skill-card" data-category="frontend">
+      <i class="fab fa-bootstrap"></i><span>Bootstrap</span>
+    </div>
+    <div class="skill-card" data-category="frontend">
+      <i class="fab fa-react"></i><span>React</span>
+    </div>
+
+
+  
+    <div class="skill-card" data-category="backend">
+      <i class="fab fa-node-js"></i><span>Node.js</span>
+    </div>
+    <div class="skill-card" data-category="backend">
+      <i class="fas fa-server"></i><span>Express</span>
+    </div>
+    <div class="skill-card" data-category="backend">
+      <i class="fas fa-database"></i><span>MongoDB</span>
+    </div>
+    <div class="skill-card" data-category="backend">
+      <i class="fas fa-database"></i><span>MySQL</span>
+    </div>
+
+
+
+    <div class="skill-card" data-category="tools">
+      <i class="fab fa-github"></i><span>GitHub</span>
+    </div>
+    <div class="skill-card" data-category="tools">
+      <i class="fas fa-code"></i><span>VS Code</span>
+    </div>
+    <div class="skill-card" data-category="tools">
+      <i class="fas fa-coffee"></i><span>Java</span>
+    </div>
+    <div class="skill-card" data-category="tools">
+      <i class="fas fa-network-wired"></i><span>DSA</span>
+    </div>
+  </div>
+</section>
+
+    </main>
+<script src="js/skill.js" ></script>
+<!-- <script src="js/script.js" ></script> -->
+
+  </body>
+</html>

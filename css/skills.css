@@ -1,0 +1,133 @@
+.skills-section {
+  text-align: center;
+  padding: 2rem 2rem;
+  background-color: #0f1117;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.section-title {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.neon {
+  color: #7cf03d;
+}
+
+.skills-subtitle {
+  color: #ccc;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  color: whitesmoke;
+}
+
+.skill-filters {
+  margin-bottom: 1rem;
+}
+
+.filter-btn {
+  padding: 0.5rem 1rem;
+  margin: 0 0.4rem;
+  border: 2px solid #7cf03d;
+  background: transparent;
+  color: #7cf03d;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background-color: #7cf03d;
+  color: #0f1117;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); 
+  gap: 0.3rem;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: auto; 
+  justify-items: center;
+}
+
+.skill-card {
+  background: #1b1e29;
+  border: 2px solid #7cf03d;
+  border-radius: 1rem;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #7cf03d;
+  font-size: 0.9rem;
+  transition: 0.3s ease;
+  margin-top: 1rem;
+}
+
+.skill-card i {
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem;
+}
+
+.skill-card:hover {
+  transform: scale(1.03);
+  background-color: #7cf03d;
+  color: #0f1117;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .skill-card {
+    width: 90px;
+    height: 90px;
+    font-size: 0.8rem;
+  }
+
+  .skill-card i {
+    font-size: 1.5rem;
+  }
+
+  .skills-subtitle {
+    font-size: 1.2rem;
+    padding: 0 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .skill-card {
+    width: 100%;
+    max-width: 250px;
+    height: 90px;
+    margin: auto;
+    font-size: 1rem;
+  }
+
+  .skill-card i {
+    font-size: 1.8rem;
+  }
+
+  .skills-section {
+    padding: 1rem 1rem;
+  }
+}

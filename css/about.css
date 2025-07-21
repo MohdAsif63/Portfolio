@@ -1,0 +1,265 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0f1117;
+  color: white;
+  overflow: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  height: calc(100vh - 80px);
+  box-sizing: border-box;
+}
+
+.sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-left: 1rem;
+}
+
+.intro-text {
+  color: #ccc;
+  font-size: 1.2rem;
+  padding: 0 10px;
+  margin-bottom: 1rem;
+  text-align: left;
+  line-height: 1.7;
+}
+
+.intro-text span {
+  color: #7cf03d;
+  font-weight: bold;
+}
+
+.hire-heading {
+  font-size: 3rem;
+  font-weight: 900;
+  color: white;
+  margin-bottom: 0.3rem;
+  margin-left: 1rem;
+}
+
+.tab-button {
+  padding: 15px 20px;
+  background-color: #1e1e1e;
+  border: 2px solid #1e1e1e;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 4rem;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.tab-button:hover,
+.tab-button.active {
+  box-shadow: 2px 2px 10px #7cf03d;
+  transform: scale(1.02);
+  color: #7cf03d;
+}
+
+.content-area {
+  flex: 3;
+  padding-left: 40px;
+  overflow-y: auto;
+}
+
+.tab-heading {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.tab-section {
+  align-items: flex-start;
+  display: none;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-left: 4rem;
+  margin-top: 3.75rem;
+  justify-content: flex-start;
+}
+
+.tab-section.active {
+  display: flex;
+}
+
+.card {
+  width: calc(45% - 1rem);
+  height: auto;
+  background-color: #1f242d;
+  border: 2px solid #1e1e1e;
+  border-radius: 14px;
+  padding: 1rem;
+  transition: box-shadow 0.3s ease;
+  margin-bottom: -1.5rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 8px #7cf03d;
+}
+
+.card h2 {
+  margin-bottom: 0.6rem;
+  font-size: 1.5rem;
+}
+
+.card p {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+.neon {
+  color: #7cf03d;
+}
+
+.btn-link {
+  margin-top: 0.5rem;
+  display: inline-block;
+  background-color: #7cf03d;
+  color: #000;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  width: 30%;
+}
+
+.btn-link:hover {
+  background-color: #5cbe2e;
+  color: #fff;
+}
+
+.card-bt {
+  margin-top: 0.001rem;
+}
+
+.education,
+.certificate,
+.coding {
+  margin: 1rem 0 0 2rem;
+}
+
+.about-details {
+  background-color: #1f242d;
+  border-radius: 14px;
+  padding: 2.5rem;
+  border: 2px solid #1e1e1e;
+  color: white;
+  width: 80%;
+  margin-right: 3rem;
+  box-shadow: 0 0 8px #7cf03d;
+}
+
+.about-header {
+  margin-bottom: 1.5rem;
+}
+
+.about-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-header p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ccc;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  gap: 1.1rem 3rem;
+  font-size: 1.2rem;
+}
+
+.about-grid div strong {
+  color: #7cf03d;
+}
+
+.about-heading {
+  margin-left: 7rem;
+}
+
+.about-box {
+  margin-top: 4rem;
+  margin-left: 3rem;
+}
+
+.learning {
+  margin: 1rem 0 0 2rem;
+}
+
+.tab-subtext {
+  font-size: 1.3rem;
+  color: #ccc;
+  margin: 0.5rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+/* ✅ Fully Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .content-area {
+    padding: 10px;
+  }
+
+  .tab-heading {
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+  }
+
+  .tab-section {
+    margin-left: 0;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .about-heading {
+    margin: 0;
+    text-align: center;
+  }
+
+  .about-details {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    font-size: 1rem;
+  }
+}

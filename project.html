@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asif-Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/project.css" />
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
+
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="left">Asif 's <span class="neon">Portfolio</span></div>
+        <div class="rigth">
+          <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="Skill.html" class="nav-link">Skills</a></li>
+            <li><a href="project.html" class="nav-link">Projects</a></li>
+            <li><a href="contact.html" class="nav-link">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="projects">
+  <h2>My<span class="neon">Projects</span></h2>
+
+  <div class="project-card active" data-index="0">
+    <div class="pro-left">
+      <div class="project-left">
+        <div class="project-count">01</div>
+        <h3>DreamLust</h3>
+        <p>DreamLust is a travel booking platform like Airbnb 🏠, offering curated stays 🌍, cloud image uploads ☁️, map integration 🗺️, and secure authentication 🔐.</p>
+        <div class="tech">HTML | CSS | JS | Nodejs | Expressjs | MongoDB </div>
+        <div class="links">
+          <a href="https://full-stack-xq3b.onrender.com/listings" class="btn">View</a>
+          <a href="https://github.com/MohdAsif63/Full-Stack" class="btn">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pro-right">
+      <div class="project-right">
+        <div class="card-img">
+          <img src="assets/pro1img1.png" />
+          <img src="assets/pro1img2.png" />
+          <img src="assets/pro1img3.png" />
+          <img src="assets/pro1img4.png" />
+        </div>
+      </div>
+      <div class="arrows">
+        <div class="circle-btn prev"><i class="fas fa-arrow-left"></i></div>
+        <div class="circle-btn next"><i class="fas fa-arrow-right"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card" data-index="1">
+    <div class="pro-left">
+      <div class="project-left">
+        <div class="project-count">02</div>
+        <h3>Weather App</h3>
+        <p>WeatherApp is my first React project showing real-time weather 🌦️, temperature 🌡️, humidity 💧, and wind speed 🌬️ using animated icons.</p>
+        <div class="tech">ReactJS</div>
+        <div class="links">
+          <a href="https://67fab080c95f4aa770ce242d--weather-app-state.netlify.app/" class="btn">View</a>
+          <a href="https://github.com/MohdAsif63/Weather-App" class="btn">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pro-right">
+      <div class="project-right">
+        <div class="card-img">
+          <img src="assets/pro2img1.png" />
+        </div>
+      </div>
+      <div class="arrows">
+        <div class="circle-btn prev"><i class="fas fa-arrow-left"></i></div>
+        <div class="circle-btn next"><i class="fas fa-arrow-right"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card" data-index="2">
+    <div class="pro-left">
+      <div class="project-left">
+        <div class="project-count">03</div>
+        <h3>Portfolio-WebSite</h3>
+        <p>A personal portfolio 💼 showcasing skills 🛠️, projects 💻, and contact info 📧. Built with HTML, CSS, JavaScript 🧠, and fully responsive 📱.</p>
+        <div class="tech">HTML | CSS | JsvaScript</div>
+        <div class="links">
+          <a href="#" class="btn">View</a>
+          <a href="#" class="btn">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pro-right">
+      <div class="project-right">
+        <div class="card-img">
+          <img src="assets/pro3img1.png" />
+          <img src="assets/pro3img2.png" />
+          <img src="assets/pro3img3.png" />
+          <img src="assets/pro3img4.png" />
+        </div>
+      </div>
+      <div class="arrows">
+        <div class="circle-btn prev"><i class="fas fa-arrow-left"></i></div>
+        <div class="circle-btn next"><i class="fas fa-arrow-right"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+    
+    <!-- preview image -->
+<div id="imgPreviewOverlay" class="img-preview-overlay">
+  <span id="closePreview">&times;</span>
+  <img id="imgPreview" src="" alt="Preview" />
+</div>
+    <script src="js/project.js"></script>
+  </body>
+</html>

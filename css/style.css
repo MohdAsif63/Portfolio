@@ -1,0 +1,272 @@
+* {
+          margin: 0;
+          padding: 0;
+        }
+  
+        body {
+          background-color:#0f1117;
+          color: white;
+          overflow: hidden;
+        }
+        .nav {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          background-color:#323946;
+          height: 80px;
+          width: 100%;
+        }
+  
+        nav ul {
+          display: flex;
+          justify-content: center;
+          margin-right: -150px;
+        }
+  
+        nav ul li {
+          list-style: none;
+          margin: 0 25px;
+          font-size: 1.6rem;
+        }
+  
+        nav ul li a {
+          text-decoration: none;
+          color: white;
+        }
+
+        nav ul li a:hover {
+         color: #7cf03d;
+          transform: scale(1.1) !important;
+        }
+
+        .nav a.active {
+  color: #7cf03d; 
+}
+
+  
+        .left {
+          font-size: 2.3rem;
+        }
+  
+        .firstsec {
+          display: flex;
+          justify-content: space-around;
+          margin: 80px 0;
+          align-items: center;
+          font-size: 2.5rem;
+          margin-top: 6rem;
+        }
+  
+        .firstsec > div {
+          width: 30%;
+        }
+  
+        .rightsec img {
+         width: 100%;
+         border-radius: 100%;           
+         border: 5px solid #7cf03d;  
+         box-shadow: 2px 2px 10px #7cf03d ;
+        }
+
+  
+        .leftsec {
+          font-size: 3rem;
+        }
+  
+        .purple {
+          color: #7cf03d;
+        }
+
+        .neon{
+          color: #7cf03d;
+        }
+  
+        #element {
+          color: #7cf03d;
+        }
+  
+        .secondsec{
+          max-width: 80vw;
+          margin: auto;
+          height: 80vh;
+        }
+  
+        .secondsec h1{
+          font-size: 2rem;
+        }
+  
+        .secondsec box{
+          background-color: white;
+          width: 80vw;
+          height: 2px;
+          margin: 56px 0 ;
+        }
+  
+        .text-grey{
+          color: grey;
+        }
+  
+        .secondsec .vertical{
+          height: 93px;
+          width: 1px;
+          background-color: white;
+          margin: 0 100px;
+        }
+
+        footer {
+          text-align: center;
+          padding: 2rem 0;
+          margin-top: 4rem;
+          font-size: 0.9rem;
+          border-top: 2px solid  white;
+        }
+
+         .firstsecform{
+          display: flex;
+          justify-content: center;
+          text-align: center;
+        }
+  
+
+        .btn{
+          margin-top: 2.5rem;
+        display: inline-block;
+         text-decoration: none;
+        font-size: 1rem;
+        padding: 1rem 2rem;
+        background: #7cf03d;
+        border: 0.2rem solid #7cf03d;
+        border-radius: 4rem;
+        transition: 0.2s;
+        box-shadow:2px 2px 10px #7cf03d;
+        }
+
+         .btn a{
+         color: inherit;
+         text-decoration: none;
+         font-weight: bold;
+        }
+
+        .btn:hover {
+          color: #7cf03d;
+          box-shadow: none;
+          background: transparent;
+        }
+
+        .sosbtn a {
+    display: inline-flex;
+    font-size: 2rem;
+    color: #7cf03d;
+    padding: 0.8rem;
+    border: 0.2rem solid #7cf03d;
+    border-radius: 50%;
+    margin: 0px 0.8rem;
+    transition: 0.5s;
+}
+
+
+
+/* index media btn styling */
+.media {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: #7cf03d;
+  color: #000;
+  border: 2px solid #7cf03d;
+  border-radius: 50%;
+  font-size: 24px;
+  box-shadow: 2px 2px 10px #7cf03d;
+  text-decoration: none;
+  transition: 0.3s;
+  margin-top: 2.3rem;
+  margin-right: 1rem;
+}
+
+.media:hover {
+ background: transparent;
+  color: #7cf03d;
+  box-shadow: none;
+}
+
+/* index styling  */
+
+.intro-desc {
+  color: white;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+
+/* To make responsive  */
+
+@media (max-width: 768px) {
+  /* Stack first section vertically */
+  .firstsec {
+    flex-direction: column;
+    font-size: 2rem;
+    margin-top: 4rem;
+    gap: 2rem;
+  }
+
+  .firstsec > div {
+    width: 90%;
+    text-align: center;
+  }
+
+  .leftsec {
+    font-size: 2.2rem;
+  }
+
+  /* Adjust image */
+  .rightsec img {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  /* Navigation becomes vertical */
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+    padding-top: 1rem;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  /* Fix second section height */
+  .secondsec {
+    height: auto;
+    margin: 2rem 1rem;
+  }
+
+  .secondsec h1 {
+    font-size: 1.5rem;
+  }
+
+  /* Scale social icons */
+  .media {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    margin-right: 0.5rem;
+  }
+
+  /* Scale text */
+  .intro-desc {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 1rem;
+  }
+}
+
+
