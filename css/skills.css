@@ -1,3 +1,8 @@
+body{
+  overflow-x: hidden;
+overflow-y: auto;
+
+}
 .skills-section {
   text-align: center;
   padding: 2rem 2rem;

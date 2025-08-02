@@ -4,6 +4,9 @@ body {
   padding: 0;
   background-color: #0f1117;
   color: #fff;
+  overflow-x: hidden;
+overflow-y: auto;
+
 }
 
 /* Headings */
