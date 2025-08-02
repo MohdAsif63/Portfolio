@@ -29,3 +29,7 @@ document.querySelectorAll(".nav-link").forEach(link => {
     link.classList.add("active");
   }
 });
+
+function toggleMenu() {
+  document.getElementById('navLinks').classList.toggle('show');
+}

@@ -204,3 +204,39 @@ body {
     margin-right: 0;
   }
 }
+
+
+/* ✅ Mobile Navbar Toggle Styles */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: #7cf03d;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    margin-right: 1rem;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #323946;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 1rem 0;
+    text-align: center;
+  }
+}
