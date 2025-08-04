@@ -61,7 +61,6 @@ subText.textContent = headings[defaultTab].subtitle;
 // Add event listeners to buttons
 buttons.forEach(button => {
   button.addEventListener('click', () => {
-    // Update button state
     buttons.forEach(btn => btn.classList.remove('active'));
     button.classList.add('active');
 

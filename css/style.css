@@ -6,9 +6,9 @@
         body {
           background-color:#0f1117;
           color: white;
-          /* overflow: hidden; */
+
           overflow-x: hidden;
-overflow-y: auto;
+        overflow-y: auto;
 
         }
         .nav {
@@ -208,7 +208,6 @@ overflow-y: auto;
 /* To make responsive  */
 
 @media (max-width: 768px) {
-  /* Stack first section vertically */
   .firstsec {
     flex-direction: column;
     font-size: 2rem;
@@ -225,13 +224,13 @@ overflow-y: auto;
     font-size: 2.2rem;
   }
 
-  /* Adjust image */
+  
   .rightsec img {
     width: 70%;
     margin: 0 auto;
   }
 
-  /* Navigation becomes vertical */
+  
   nav ul {
     flex-direction: column;
     align-items: center;
@@ -243,7 +242,7 @@ overflow-y: auto;
     margin: 10px 0;
   }
 
-  /* Fix second section height */
+  
   .secondsec {
     height: auto;
     margin: 2rem 1rem;
@@ -253,7 +252,7 @@ overflow-y: auto;
     font-size: 1.5rem;
   }
 
-  /* Scale social icons */
+  
   .media {
     width: 40px;
     height: 40px;
@@ -261,7 +260,7 @@ overflow-y: auto;
     margin-right: 0.5rem;
   }
 
-  /* Scale text */
+
   .intro-desc {
     font-size: 1.1rem;
     line-height: 1.5;
@@ -274,7 +273,7 @@ overflow-y: auto;
 }
 
 
-/* ✅ Mobile Navbar Toggle Styles */
+/* Mobile Nav */
 .hamburger {
   display: none;
   font-size: 2rem;
@@ -285,7 +284,7 @@ overflow-y: auto;
 @media (max-width: 768px) {
   .hamburger {
     display: block;
-    margin-right: 1rem;
+    margin-right: -2.5rem;
   }
 
   .nav-links {

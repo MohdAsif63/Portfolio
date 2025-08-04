@@ -3,10 +3,7 @@ body {
   padding: 0;
   background-color: #0f1117;
   color: white;
-  overflow: auto;
   overflow-x: hidden;
-overflow-y: auto;
-
 }
 
 .container {
@@ -32,11 +29,6 @@ overflow-y: auto;
   margin-bottom: 1rem;
   text-align: left;
   line-height: 1.7;
-}
-
-.intro-text span {
-  color: #7cf03d;
-  font-weight: bold;
 }
 
 .hire-heading {
@@ -94,7 +86,6 @@ overflow-y: auto;
 
 .card {
   width: calc(45% - 1rem);
-  height: auto;
   background-color: #1f242d;
   border: 2px solid #1e1e1e;
   border-radius: 14px;
@@ -102,7 +93,6 @@ overflow-y: auto;
   transition: box-shadow 0.3s ease;
   margin-bottom: -1.5rem;
   box-sizing: border-box;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -156,7 +146,8 @@ overflow-y: auto;
 
 .education,
 .certificate,
-.coding {
+.coding,
+.learning {
   margin: 1rem 0 0 2rem;
 }
 
@@ -173,11 +164,6 @@ overflow-y: auto;
 
 .about-header {
   margin-bottom: 1.5rem;
-}
-
-.about-title {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
 }
 
 .about-header p {
@@ -206,10 +192,6 @@ overflow-y: auto;
   margin-left: 3rem;
 }
 
-.learning {
-  margin: 1rem 0 0 2rem;
-}
-
 .tab-subtext {
   font-size: 1.3rem;
   color: #ccc;
@@ -218,7 +200,13 @@ overflow-y: auto;
   margin-top: 1rem;
 }
 
-/* ✅ Fully Responsive */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: #7cf03d;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -248,6 +236,7 @@ overflow-y: auto;
 
   .card {
     width: 100%;
+    margin-bottom: 1rem;
   }
 
   .about-heading {
@@ -265,21 +254,10 @@ overflow-y: auto;
     grid-template-columns: 1fr;
     font-size: 1rem;
   }
-}
 
-
-/* ✅ Mobile Navbar Toggle Styles */
-.hamburger {
-  display: none;
-  font-size: 2rem;
-  color: #7cf03d;
-  cursor: pointer;
-}
-
-@media (max-width: 768px) {
   .hamburger {
     display: block;
-    margin-right: 1rem;
+    margin-right: -2.5rem;
   }
 
   .nav-links {

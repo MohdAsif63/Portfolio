@@ -138,7 +138,7 @@ overflow-y: auto;
 }
 
 
-/* ✅ Mobile Navbar Toggle Styles */
+/* Mobile Nav */
 .hamburger {
   display: none;
   font-size: 2rem;
@@ -149,7 +149,7 @@ overflow-y: auto;
 @media (max-width: 768px) {
   .hamburger {
     display: block;
-    margin-right: 1rem;
+   margin-right: -2.5rem;
   }
 
   .nav-links {

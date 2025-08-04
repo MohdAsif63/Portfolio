@@ -1,58 +1,46 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Asif-Portfolio</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/about.css" />
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-/>
-
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asif-Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
 </head>
-  </head>
-  <body>
-    <header>
+<body>
+  <header>
+    <nav class="nav">
+      <div class="left">Asif 's <span class="neon">Portfolio</span></div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="Skill.html" class="nav-link">Skills</a></li>
+        <li><a href="project.html" class="nav-link">Projects</a></li>
+        <li><a href="contact.html" class="nav-link">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
 
-          <nav class="nav">
-  <div class="left">Asif 's <span class="neon">Portfolio</span></div>
+  <main>
+    <section class="container">
+      <div class="sidebar" id="sidebar">
+        <h2 class="hire-heading"><span class="neon">Hire</span> Me!</h2>
+        <div class="intro-text">
+          <p>🚀 Driven by curiosity 🧠, skilled in coding 💻, design 🎨, I build with quality 🛠️, adapt fast 🔄, and innovate ✨</p>
+        </div>
+        <button class="tab-button active" data-target="education">🎓 Education</button>
+        <button class="tab-button" data-target="certificates">📜Certificates</button>
+        <button class="tab-button" data-target="learning">🏆 Learning</button>
+        <button class="tab-button" data-target="coding">💻 Coding Profiles</button>
+        <button class="tab-button" data-target="aboutme">📞 About Me</button>
+      </div>
 
-
-  <div class="hamburger" onclick="toggleMenu()">
-    <i class="fas fa-bars"></i>
-  </div>
-
-  <ul class="nav-links" id="navLinks">
-    <li><a href="index.html" class="nav-link">Home</a></li>
-    <li><a href="about.html" class="nav-link">About</a></li>
-    <li><a href="Skill.html" class="nav-link">Skills</a></li>
-    <li><a href="project.html" class="nav-link">Projects</a></li>
-    <li><a href="contact.html" class="nav-link">Contact Me</a></li>
-  </ul>
-</nav>
-    </header>
-    <main>
-  <section class="container">
-    <div class="sidebar">
-    <h2 class="hire-heading"><span class="neon">Hire</span> Me!</h2>
-      <div class="intro-text">
-  <p>
-   🚀 Driven by curiosity 🧠, skilled in coding 💻, design 🎨,
-I build with quality 🛠️, adapt fast 🔄, and innovate ✨
-  </p>
-</div>
-
-      <button class="tab-button active" data-target="education">🎓 Education</button>
-      <button class="tab-button" data-target="certificates">📜Certificates</button>
-      <button class="tab-button" data-target="learning">🏆 Learning</button>
-      <button class="tab-button" data-target="coding">💻 Coding Profiles</button>
-      <button class="tab-button" data-target="aboutme">📞 About Me</button>
-    </div>
-
-    <div class="content-area">
-      <div class="about-heading"><h2 id="tab-heading" class="tab-heading">My Education</h2></div>
+      <div class="content-area">
+        <div class="about-heading"><h2 id="tab-heading" class="tab-heading">My Education</h2></div>
 
     <div class="education">
         <div class="tab-section active" id="education">
@@ -60,7 +48,7 @@ I build with quality 🛠️, adapt fast 🔄, and innovate ✨
           <h2><span class="neon">B.Tech</span></h2>
           <p><span class="neon">Kanpur Institute of Technology</span></p>
           <p>Completed B.Tech in Computer Science with 60%.hands-on experience in software engineering.💻</p>
-          <a href="https://drive.google.com/file/d/1LUBfm7s76nFGTGx55ZXZPNCtBViQyAdF/view?usp=sharing" class="btn-link" >View Certificate</a>
+          <a href="" class="btn-link" >View Certificate</a>
         </div>
         <div class="card">
           <h2><span class="neon">Intermediate</span></h2>
@@ -159,9 +147,9 @@ I build with quality 🛠️, adapt fast 🔄, and innovate ✨
   </div>
      </div>
     </div>
-  </section>
-
-    </main>
-    <script src="js/about.js"></script>
-  </body>
+      </div>
+    </section>
+  </main>
+  <script src="js/about.js"></script>
+</body>
 </html>
