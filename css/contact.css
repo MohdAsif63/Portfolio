@@ -137,6 +137,7 @@ body {
     flex-direction: column;
     gap: 2rem;
     padding: 0 1rem;
+    margin-top: -1rem;
   }
 
   .contact-heading {
