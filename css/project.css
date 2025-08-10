@@ -222,14 +222,14 @@ body {
 /* Mobile navbar */
 .hamburger {
   display: none;
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: #7cf03d;
   cursor: pointer;
 }
 @media (max-width: 768px) {
   .hamburger {
     display: block;
-   margin-right: -2.5rem;
+   margin-right: -1rem;
   }
 
   .nav-links {
@@ -250,5 +250,33 @@ body {
   .nav-links li {
     margin: 1rem 0;
     text-align: center;
+  }
+
+   .left{
+  font-size: 1.8rem;
+}
+
+  .project-left p {
+    text-align: center;
+  }
+
+  .project-card{
+    margin: 1rem;
+    padding: 0;
+  }
+
+  .tech{
+    text-align: center;
+  }
+
+  .project-right{
+    margin-top: auto;
+  }
+
+  .project-card{
+    gap: 2rem;
+  }
+  .btn{
+    margin-top: 1rem;
   }
 }

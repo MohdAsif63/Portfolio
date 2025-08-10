@@ -276,7 +276,7 @@ caret-color: transparent;
 /* Mobile Nav */
 .hamburger {
   display: none;
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: #7cf03d;
   cursor: pointer;
 }
@@ -284,7 +284,7 @@ caret-color: transparent;
 @media (max-width: 768px) {
   .hamburger {
     display: block;
-    margin-right: -2.5rem;
+    margin-right: -1rem;
   }
 
   .nav-links {
@@ -306,4 +306,12 @@ caret-color: transparent;
     margin: 1rem 0;
     text-align: center;
   }
+
+  .left{
+  font-size: 1.8rem;
+}
+
+.firstsec{
+  margin-top: 2rem;
+}
 }
