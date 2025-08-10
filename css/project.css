@@ -253,7 +253,7 @@ body {
   }
 
    .left{
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
   .project-left p {
@@ -279,4 +279,16 @@ body {
   .btn{
     margin-top: 1rem;
   }
+
+  .projects h2 {
+  font-size: 2.5rem;
+}
+
+.project-count{
+  font-size: 2.5rem;
+}
+
+.project-left h3{
+  font-size: 2rem;
+}
 }

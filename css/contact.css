@@ -135,7 +135,6 @@ body {
 @media (max-width: 768px) {
   .contact-container {
     flex-direction: column;
-    gap: 2rem;
     padding: 0 1rem;
     margin-top: -1rem;
   }
@@ -212,7 +211,7 @@ body {
   }
 
    .left{
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 }
 
@@ -228,9 +227,14 @@ body {
   .contact-container {
     width: 100%;
     display: flex;
+    gap:1rem;
     flex-direction: column;
     justify-content: center; 
     align-items: center; 
     padding-top: 2rem;
+  }
+
+ .contact-card {
+    margin-bottom: 2rem; /* adds space below the card */
   }
 }

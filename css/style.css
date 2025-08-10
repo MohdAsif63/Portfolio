@@ -88,6 +88,11 @@ caret-color: transparent;
         #element {
           color: #7cf03d;
         }
+        
+        #element {
+  border-right: none !important;
+}
+
   
         .secondsec{
           max-width: 80vw;
@@ -308,7 +313,7 @@ caret-color: transparent;
   }
 
   .left{
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .firstsec{
